@@ -11,7 +11,7 @@ public class Order
 	private String tax;
 	private String total;
 
-	public Order(int num, String Food, String custName, String SubTotal,String Tax, String Total)
+	public Order(int num, String Food, String custName, String SubTotal, String Tax, String Total)
 	{
 		orderNum = num;
 		food = Food;
@@ -25,7 +25,7 @@ public class Order
 		try
 		{
 			
-			write.append(toAdd.toString()+"\n");
+			write.append(toAdd.toString() + "\n");
 			write.flush();
 
 		} 
@@ -38,7 +38,7 @@ public class Order
 	public String toString()
 	{
 		StringBuilder build = new StringBuilder();
-		build.append(orderNum + "," + food + "," + name + ","+ subTotal + "," + tax + "," + total);
+		build.append(orderNum + "," + food + "," + name + "," + subTotal + "," + tax + "," + total);
 		return build.toString();
 		
 	}	
